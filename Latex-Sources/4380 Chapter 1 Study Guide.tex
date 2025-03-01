@@ -1,0 +1,472 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+\title{Study Guide for Chapter 1}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Computer Security Concepts}
+\subsection{Definition of Computer Security}
+Computer security is defined as the protection afforded to an automated information system to preserve the integrity, availability, and confidentiality of information system resources. These resources include hardware, software, firmware, information/data, and telecommunications.
+
+\subsection{Key Objectives of Computer Security}
+The three key objectives of computer security are:
+\begin{itemize}
+    \item \textbf{Confidentiality}: Ensures that private or confidential information is not disclosed to unauthorized individuals. It includes data confidentiality and privacy.
+    \item \textbf{Integrity}: Ensures that information and programs are changed only in a specified and authorized manner. It includes data integrity and system integrity.
+    \item \textbf{Availability}: Ensures that systems work promptly and service is not denied to authorized users.
+\end{itemize}
+
+These objectives are often referred to as the \textbf{CIA triad}.
+
+\subsection{Additional Security Concepts}
+\begin{itemize}
+    \item \textbf{Authenticity}: Ensures that the origin of a message or data is verified and trusted.
+    \item \textbf{Accountability}: Ensures that actions of an entity can be traced uniquely to that entity.
+\end{itemize}
+
+\subsection{Examples of Security Requirements}
+Examples of applications illustrating confidentiality, integrity, and availability requirements are provided, with impact levels (low, moderate, high) defined in FIPS 199.
+
+\section{Threats, Attacks, and Assets}
+\subsection{Threats and Attacks}
+\begin{itemize}
+    \item \textbf{Threat}: A potential for violation of security, which exists when there is a circumstance, capability, action, or event that could breach security and cause harm.
+    \item \textbf{Attack}: A threat that is carried out and, if successful, leads to an undesirable violation of security.
+    \item \textbf{Types of Attacks}:
+        \begin{itemize}
+            \item \textbf{Active Attack}: Attempts to alter system resources or affect their operation.
+            \item \textbf{Passive Attack}: Attempts to learn or make use of information from the system without affecting system resources.
+        \end{itemize}
+\end{itemize}
+
+\subsection{Threat Consequences}
+\begin{itemize}
+    \item \textbf{Unauthorized Disclosure}: Threat to confidentiality.
+    \item \textbf{Deception}: Threat to integrity.
+    \item \textbf{Disruption}: Threat to availability.
+    \item \textbf{Usurpation}: Threat to system integrity.
+\end{itemize}
+
+\subsection{Assets}
+The assets of a computer system can be categorized as:
+\begin{itemize}
+    \item \textbf{Hardware}: Vulnerable to theft, damage, and availability threats.
+    \item \textbf{Software}: Vulnerable to deletion, modification, and piracy.
+    \item \textbf{Data}: Vulnerable to unauthorized access, modification, and destruction.
+    \item \textbf{Communication Lines and Networks}: Vulnerable to passive and active attacks.
+\end{itemize}
+
+\section{Security Functional Requirements}
+The FIPS 200 standard enumerates 17 security-related areas for protecting the confidentiality, integrity, and availability of information systems. These areas include:
+\begin{itemize}
+    \item Access Control
+    \item Awareness and Training
+    \item Audit and Accountability
+    \item Certification, Accreditation, and Security Assessments
+    \item Configuration Management
+    \item Contingency Planning
+    \item Identification and Authentication
+    \item Incident Response
+    \item Maintenance
+    \item Media Protection
+    \item Physical and Environmental Protection
+    \item Planning
+    \item Personnel Security
+    \item Risk Assessment
+    \item Systems and Services Acquisition
+    \item System and Communications Protection
+    \item System and Information Integrity
+\end{itemize}
+
+\section{Fundamental Security Design Principles}
+The following are fundamental security design principles:
+\begin{itemize}
+    \item \textbf{Economy of Mechanism}: Keep the design simple and small.
+    \item \textbf{Fail-Safe Defaults}: Default to lack of access.
+    \item \textbf{Complete Mediation}: Check every access against the access control mechanism.
+    \item \textbf{Open Design}: Security mechanisms should be open to public scrutiny.
+    \item \textbf{Separation of Privilege}: Require multiple conditions to grant access.
+    \item \textbf{Least Privilege}: Every process and user should operate with the least set of privileges necessary.
+    \item \textbf{Least Common Mechanism}: Minimize functions shared by different users.
+    \item \textbf{Psychological Acceptability}: Security mechanisms should not unduly interfere with user work.
+    \item \textbf{Isolation}: Isolate public access systems from critical resources.
+    \item \textbf{Encapsulation}: Encapsulate procedures and data objects in a protected domain.
+    \item \textbf{Modularity}: Develop security functions as separate, protected modules.
+    \item \textbf{Layering}: Use multiple, overlapping protection approaches.
+    \item \textbf{Least Astonishment}: A program or user interface should respond in the least surprising way.
+\end{itemize}
+
+\section{Attack Surfaces and Attack Trees}
+\subsection{Attack Surfaces}
+An attack surface consists of the reachable and exploitable vulnerabilities in a system. Attack surfaces can be categorized as:
+\begin{itemize}
+    \item \textbf{Network Attack Surface}: Vulnerabilities over a network.
+    \item \textbf{Software Attack Surface}: Vulnerabilities in application, utility, or operating system code.
+    \item \textbf{Human Attack Surface}: Vulnerabilities created by personnel or outsiders.
+\end{itemize}
+
+\subsection{Attack Trees}
+An attack tree is a branching, hierarchical data structure that represents a set of potential techniques for exploiting security vulnerabilities. The root node represents the goal of the attack, and the leaf nodes represent different ways to initiate an attack.
+
+\section{Computer Security Strategy}
+A comprehensive security strategy involves:
+\begin{itemize}
+    \item \textbf{Security Policy}: A formal statement of rules and practices that specify how a system provides security services.
+    \item \textbf{Security Implementation}: Involves prevention, detection, response, and recovery.
+    \item \textbf{Assurance and Evaluation}: Assurance is the degree of confidence that security measures work as intended, and evaluation is the process of examining a system with respect to certain criteria.
+\end{itemize}
+\newpage
+\section{Multiple Choice Questions}
+\begin{enumerate}
+    \item Which of the following is NOT one of the key objectives of computer security?
+    \begin{enumerate}
+        \item Confidentiality
+        \item Integrity
+        \item Availability
+        \item Authenticity
+    \end{enumerate}
+    
+    \item What is the primary goal of a passive attack?
+    \begin{enumerate}
+        \item To alter system resources
+        \item To learn or make use of information from the system
+        \item To disrupt system services
+        \item To gain unauthorized access to a system
+    \end{enumerate}
+    
+    \item Which of the following is an example of a threat to data integrity?
+    \begin{enumerate}
+        \item Unauthorized disclosure of information
+        \item Modification of data files
+        \item Denial of service
+        \item Theft of hardware
+    \end{enumerate}
+    
+    \item What is the principle of least privilege?
+    \begin{enumerate}
+        \item Every process and user should operate with the least set of privileges necessary.
+        \item Security mechanisms should be open to public scrutiny.
+        \item Every access must be checked against the access control mechanism.
+        \item The design of security measures should be as simple and small as possible.
+    \end{enumerate}
+    
+    \item Which of the following is a characteristic of an active attack?
+    \begin{enumerate}
+        \item It attempts to learn or make use of information from the system.
+        \item It attempts to alter system resources or affect their operation.
+        \item It is difficult to detect because it does not involve any alteration of the data.
+        \item It is typically prevented by encryption.
+    \end{enumerate}
+    \newpage
+    \item What is the purpose of an attack tree?
+    \begin{enumerate}
+        \item To represent a set of potential techniques for exploiting security vulnerabilities.
+        \item To define the security policy of a system.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+    \end{enumerate}
+    
+    \item Which of the following is a fundamental security design principle?
+    \begin{enumerate}
+        \item Economy of Mechanism
+        \item Fail-Safe Defaults
+        \item Complete Mediation
+        \item All of the above
+    \end{enumerate}
+    
+    \item What is the primary focus of a network attack surface?
+    \begin{enumerate}
+        \item Vulnerabilities in application code.
+        \item Vulnerabilities over a network.
+        \item Vulnerabilities created by personnel.
+        \item Vulnerabilities in operating system code.
+    \end{enumerate}
+    
+    \item Which of the following is an example of a security functional requirement?
+    \begin{enumerate}
+        \item Access Control
+        \item Awareness and Training
+        \item Audit and Accountability
+        \item All of the above
+    \end{enumerate}
+    
+    \item What is the main goal of a security policy?
+    \begin{enumerate}
+        \item To define the rules and practices for providing security services.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a threat to system integrity?
+    \begin{enumerate}
+        \item Unauthorized disclosure of information
+        \item Modification of data files
+        \item Denial of service
+        \item Theft of hardware
+    \end{enumerate}
+    
+    \item What is the purpose of encapsulation in security design?
+    \begin{enumerate}
+        \item To isolate public access systems from critical resources.
+        \item To encapsulate procedures and data objects in a protected domain.
+        \item To minimize functions shared by different users.
+        \item To develop security functions as separate, protected modules.
+    \end{enumerate}
+    
+    \item Which of the following is a characteristic of a passive attack?
+    \begin{enumerate}
+        \item It attempts to alter system resources.
+        \item It attempts to learn or make use of information from the system.
+        \item It is easy to detect because it involves alteration of the data.
+        \item It is typically prevented by physical security measures.
+    \end{enumerate}
+    
+    \item What is the primary goal of a security implementation?
+    \begin{enumerate}
+        \item To define the security policy of a system.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a fundamental security design principle?
+    \begin{enumerate}
+        \item Economy of Mechanism
+        \item Fail-Safe Defaults
+        \item Complete Mediation
+        \item All of the above
+    \end{enumerate}
+    
+    \item What is the primary focus of a software attack surface?
+    \begin{enumerate}
+        \item Vulnerabilities in application code.
+        \item Vulnerabilities over a network.
+        \item Vulnerabilities created by personnel.
+        \item Vulnerabilities in operating system code.
+    \end{enumerate}
+    
+    \item Which of the following is an example of a security functional requirement?
+    \begin{enumerate}
+        \item Access Control
+        \item Awareness and Training
+        \item Audit and Accountability
+        \item All of the above
+    \end{enumerate}
+      \newpage
+    \item What is the main goal of a security policy?
+    \begin{enumerate}
+        \item To define the rules and practices for providing security services.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a threat to system integrity?
+    \begin{enumerate}
+        \item Unauthorized disclosure of information
+        \item Modification of data files
+        \item Denial of service
+        \item Theft of hardware
+    \end{enumerate}
+  
+    \item What is the purpose of encapsulation in security design?
+    \begin{enumerate}
+        \item To isolate public access systems from critical resources.
+        \item To encapsulate procedures and data objects in a protected domain.
+        \item To minimize functions shared by different users.
+        \item To develop security functions as separate, protected modules.
+    \end{enumerate}
+    
+    \item Which of the following is a characteristic of a passive attack?
+    \begin{enumerate}
+        \item It attempts to alter system resources.
+        \item It attempts to learn or make use of information from the system.
+        \item It is easy to detect because it involves alteration of the data.
+        \item It is typically prevented by physical security measures.
+    \end{enumerate}
+    
+    \item What is the primary goal of a security implementation?
+    \begin{enumerate}
+        \item To define the security policy of a system.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a fundamental security design principle?
+    \begin{enumerate}
+        \item Economy of Mechanism
+        \item Fail-Safe Defaults
+        \item Complete Mediation
+        \item All of the above
+    \end{enumerate}
+    \newpage
+    \item What is the primary focus of a software attack surface?
+    \begin{enumerate}
+        \item Vulnerabilities in application code.
+        \item Vulnerabilities over a network.
+        \item Vulnerabilities created by personnel.
+        \item Vulnerabilities in operating system code.
+    \end{enumerate}
+    
+    \item Which of the following is an example of a security functional requirement?
+    \begin{enumerate}
+        \item Access Control
+        \item Awareness and Training
+        \item Audit and Accountability
+        \item All of the above
+    \end{enumerate}
+    
+    \item What is the main goal of a security policy?
+    \begin{enumerate}
+        \item To define the rules and practices for providing security services.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a threat to system integrity?
+    \begin{enumerate}
+        \item Unauthorized disclosure of information
+        \item Modification of data files
+        \item Denial of service
+        \item Theft of hardware
+    \end{enumerate}
+    
+    \item What is the purpose of encapsulation in security design?
+    \begin{enumerate}
+        \item To isolate public access systems from critical resources.
+        \item To encapsulate procedures and data objects in a protected domain.
+        \item To minimize functions shared by different users.
+        \item To develop security functions as separate, protected modules.
+    \end{enumerate}
+    
+    \item Which of the following is a characteristic of a passive attack?
+    \begin{enumerate}
+        \item It attempts to alter system resources.
+        \item It attempts to learn or make use of information from the system.
+        \item It is easy to detect because it involves alteration of the data.
+        \item It is typically prevented by physical security measures.
+    \end{enumerate}
+    \newpage
+    \item What is the primary goal of a security implementation?
+    \begin{enumerate}
+        \item To define the security policy of a system.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a fundamental security design principle?
+    \begin{enumerate}
+        \item Economy of Mechanism
+        \item Fail-Safe Defaults
+        \item Complete Mediation
+        \item All of the above
+    \end{enumerate}
+    
+    \item What is the primary focus of a software attack surface?
+    \begin{enumerate}
+        \item Vulnerabilities in application code.
+        \item Vulnerabilities over a network.
+        \item Vulnerabilities created by personnel.
+        \item Vulnerabilities in operating system code.
+    \end{enumerate}
+    
+    \item Which of the following is an example of a security functional requirement?
+    \begin{enumerate}
+        \item Access Control
+        \item Awareness and Training
+        \item Audit and Accountability
+        \item All of the above
+    \end{enumerate}
+    
+    \item What is the main goal of a security policy?
+    \begin{enumerate}
+        \item To define the rules and practices for providing security services.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+    
+    \item Which of the following is a threat to system integrity?
+    \begin{enumerate}
+        \item Unauthorized disclosure of information
+        \item Modification of data files
+        \item Denial of service
+        \item Theft of hardware
+    \end{enumerate}
+    \newpage
+    \item What is the purpose of encapsulation in security design?
+    \begin{enumerate}
+        \item To isolate public access systems from critical resources.
+        \item To encapsulate procedures and data objects in a protected domain.
+        \item To minimize functions shared by different users.
+        \item To develop security functions as separate, protected modules.
+    \end{enumerate}
+    
+    \item Which of the following is a characteristic of a passive attack?
+    \begin{enumerate}
+        \item It attempts to alter system resources.
+        \item It attempts to learn or make use of information from the system.
+        \item It is easy to detect because it involves alteration of the data.
+        \item It is typically prevented by physical security measures.
+    \end{enumerate}
+    
+    \item What is the primary goal of a security implementation?
+    \begin{enumerate}
+        \item To define the security policy of a system.
+        \item To implement security mechanisms in a system.
+        \item To evaluate the effectiveness of security measures.
+        \item To detect and respond to security attacks.
+    \end{enumerate}
+\end{enumerate}
+\newpage
+\section*{Answer Key}
+\begin{enumerate}
+    \item D
+    \item B
+    \item B
+    \item A
+    \item B
+    \item A
+    \item D
+    \item B
+    \item D
+    \item A
+    \item B
+    \item B
+    \item B
+    \item D
+    \item D
+    \item A
+    \item D
+    \item A
+    \item B
+    \item B
+    \item B
+    \item D
+    \item D
+    \item A
+    \item D
+    \item A
+    \item B
+    \item B
+    \item B
+    \item D
+    \item D
+    \item A
+    \item B
+    \item B
+    \item D
+\end{enumerate}
+
+\end{document}
